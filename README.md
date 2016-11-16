@@ -4,7 +4,9 @@ In this project, we'll practice tailoring the experience for users by allowing t
 
 We'll be building a simple clone of [Instagram](https://www.instagram.com/).
 
-[Here is your target for the required parts of the assignment](https://photogram-auth-target.herokuapp.com/) (associations, authentication).
+### [Here is your target for the required parts of the assignment](https://photogram-auth-target.herokuapp.com/) (associations, authentication).
+
+Later, optionally, you will add file uploading and  social networking.
 
 ## Domain Model
 
@@ -83,6 +85,7 @@ Below I suggest a plan of attack. Try to imagine, as you go through it, how each
 
 ## Steps
 
+1. Fork and clone as usual. `rake grade` as you go along to see how you are doing.
 1. Add [starter_generators](https://gist.github.com/raghubetina/80d3cf2cf82666ed1c0f) and [Devise](https://gist.github.com/raghubetina/9ef4a9ffa4604df74bb5) to the Gemfile.
 1. `bundle install`
 1. Generate the User table [with Devise](https://gist.github.com/raghubetina/9ef4a9ffa4604df74bb5#generate-a-new-model-with-devise):
@@ -165,4 +168,6 @@ Below I suggest a plan of attack. Try to imagine, as you go through it, how each
 
 [Here is a target for the optional parts of the assignment](https://photogram-final-target.herokuapp.com/) (file uploads, social network).
 
-## Good luck! Ask lots of questions!
+Submit as usual by syncing to your fork and `rake grade`.
+
+## The skills covered in this assignment are relevant to 99% of your project ideas. Ask lots of questions and book office hours! Good luck!
