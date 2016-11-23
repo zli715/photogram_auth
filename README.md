@@ -85,9 +85,10 @@ Below I suggest a plan of attack. Try to imagine, as you go through it, how each
 
 ## Steps
 
-1. Fork and clone as usual. `rake grade` as you go along to see how you are doing.
+1. Fork and clone as usual.
 1. Add [starter_generators](https://gist.github.com/raghubetina/80d3cf2cf82666ed1c0f) and [Devise](https://gist.github.com/raghubetina/9ef4a9ffa4604df74bb5) to the Gemfile.
 1. `bundle install`
+1. `rake grade` as you go along to see how you are doing.
 1. Generate the User table [with Devise](https://gist.github.com/raghubetina/9ef4a9ffa4604df74bb5#generate-a-new-model-with-devise):
 
     ```shell
