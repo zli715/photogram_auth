@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.6'
+gem 'rails', '5.0.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
@@ -35,11 +35,12 @@ group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem "better_errors"
   gem "binding_of_caller"
+  gem "listen"
+  gem "wdm" if Gem.win_platform?
 end
 
 gem 'rspec-rails', group: [:test, :development]
 gem 'capybara', group: [:test, :development]
-gem 'quiet_assets', group: [:test, :development]
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'factory_girl_rails', group: [:test, :development]
 gem 'faker', group: [:test, :development]
