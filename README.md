@@ -88,7 +88,7 @@ Below I suggest a plan of attack. Try to imagine, as you go through it, how each
 1. Fork and clone as usual.
 1. Add [starter_generators](https://gist.github.com/raghubetina/80d3cf2cf82666ed1c0f) and [Devise](https://gist.github.com/raghubetina/9ef4a9ffa4604df74bb5) to the Gemfile.
 1. `bundle install`
-1. `rake grade` as you go along to see how you are doing.
+1. `rails grade` as you go along to see how you are doing.
 1. Generate the User table [with Devise](https://gist.github.com/raghubetina/9ef4a9ffa4604df74bb5#generate-a-new-model-with-devise):
 
     ```shell
@@ -113,7 +113,7 @@ Below I suggest a plan of attack. Try to imagine, as you go through it, how each
     # In config/routes.rb
     root "photos#index"
     ```
-1. You can finally `rails server` and navigate to [http://localhost:3000](http://localhost:3000) to see your work so far. If you haven't `rake db:migrate`d yet, it will ask you to now.
+1. You can finally `rails server` and navigate to [http://localhost:3000](http://localhost:3000) to see your work so far. If you haven't `rails db:migrate`d yet, it will ask you to now.
 1. Generate [a better application layout](https://gist.github.com/raghubetina/80d3cf2cf82666ed1c0f#application-layout), including Bootstrap:
 
     ```shell
@@ -123,7 +123,7 @@ Below I suggest a plan of attack. Try to imagine, as you go through it, how each
 1. I've included some random starter data for you to use while developing:
 
     ```shell
-    rake db:seed
+    rails db:seed
     ```
 
     Now click around the app and see what we've got. (If you're curious, I used the [faker gem](https://github.com/stympy/faker) to create the silly random seed comments. It's very useful for quickly generating random names, addresses, etc.)
@@ -169,6 +169,6 @@ Below I suggest a plan of attack. Try to imagine, as you go through it, how each
 
 [Here is a target for the optional parts of the assignment](https://photogram-final-target.herokuapp.com/) (file uploads, social network).
 
-Submit as usual by syncing to your fork and `rake grade`.
+Submit as usual by syncing to your fork and `rails grade`.
 
 ## The skills covered in this assignment are relevant to 99% of your project ideas. Ask lots of questions and book office hours! Good luck!
