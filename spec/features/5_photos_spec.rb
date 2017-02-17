@@ -1,6 +1,6 @@
 require "rails_helper"
 
-show_tests_in_browser = true
+show_tests_in_browser = false
 do_not_show_tests_in_browser = false
 
 feature "Photos:", js: do_not_show_tests_in_browser do
@@ -125,7 +125,7 @@ feature "Photos:", js: show_tests_in_browser do
     visit "/photos"
     new_comment = "Just added a comment at #{Time.now.to_f}"
     fill_in("Add a comment...", with: new_comment)
-    find_field("Add a comment...").native.send_keys(:return)
+    find(".fa-commenting-o").click
 
     expect(page).to have_content(new_comment)
     expect(page).to have_current_path("/photos")
@@ -140,7 +140,7 @@ feature "Photos:", js: show_tests_in_browser do
     visit "/photos"
     new_comment = "Just added a comment at #{Time.now.to_f + Time.now.to_f}"
     fill_in("Add a comment...", with: new_comment)
-    find_field("Add a comment...").native.send_keys(:return)
+    find(".fa-commenting-o").click
     visit "/comments"
 
     expect(page).to have_content(new_comment)
