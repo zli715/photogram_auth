@@ -4,7 +4,7 @@ gem "starter_generators", :git => "https://github.com/raghubetina/starter_genera
 gem "devise"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.0.1'
+gem 'rails', '5.0.2'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
@@ -40,6 +40,7 @@ group :development do
   gem "binding_of_caller"
   gem "listen"
   gem "wdm" if Gem.win_platform?
+  gem "pry-rails"
 end
 
 gem 'rspec-rails', group: [:test, :development]
