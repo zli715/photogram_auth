@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
 
 root "photos#index"
 # Routes for the Users resource:
@@ -58,6 +59,8 @@ get "/users/:id", :controller => "users", :action => "show"
   #------------------------------
 
   devise_for :users
+=======
+>>>>>>> parent of 0953323... 5/25 code
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   # current user's show page
